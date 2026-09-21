@@ -3,32 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADVENTURES IN FIRE ISLAND</title>
-    <link rel="stylesheet" href="style.css">
+        <title>ADVENTURES IN FIRE ISLAND</title>
 </head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .gallery{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 800px;
+    }
+
+    .hero {
+        background-color: #f8f8f8;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .main-image {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
+
+    h1 {
+        font-size: 2em;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .blog-summary, .gallery, .call-to-action {
+        padding: 20px;
+    }
+
+    .small-images {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        gap: 10px;
+        list-style-type: none;
+    }
+
+    .small-images li {
+        flex: 1;
+    }
+
+    .small-images img {
+        display: block;
+        width: 100%;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    .cta-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007BFF;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    </style>
+    
 <body>
-    <header>
+    <header class="hero">
         <h1>ADVENTURES IN FIRE ISLAND</h1>
+        <img src="FireIsland.jpg" alt="Fire Island.jpg" class="main-image">
     </header>
 
-    <div class="Gallery">
-<!-- Main Image -->
-        <p>Welcome to the adventures in Fire Island! Explore the beautiful landscapes, enjoy the vibrant nightlife, and immerse yourself in the unique culture of this amazing destination.</p>
-        <img src="FireIsland.jpg" alt="Fire Island.jpg" class="main-image">
+    <main>
+        <section class="blog-summary">
+            <h2>Explore Fire Island</h2>
+            <p>Fire Island is a beautiful barrier island off the southern shore of Long Island, New York. Known for its pristine beaches, charming communities, and vibrant nightlife, it offers a perfect getaway for nature lovers and adventure seekers alike.</p>
+        </section>
 
-        <!-- Three Small Images -->
+    <section class="gallery">
+        <h2>Fire Island Gallery</h2>
          <p>Discover the hidden gems of Fire Island through these captivating images. Each photo captures a different aspect of the island's charm, from serene beaches to lively boardwalks.</p>
-        <div class="small-images">
-            <img src="FireIsland1.jpg" alt="Fire Island 1" class="small-image">
-            <img src="FireIsland2.jpg" alt="Fire Island 2" class="small-image">
-            <img src="FireIsland3.jpg" alt="Fire Island 3" class="small-image">
-        </div>
-    </div>
+        <ul class="small-images">
+            <li><img src="FireIsland1.jpg" alt="Fire Island 1" class="small-image"></li>
+            <li><img src="FireIsland2.jpg" alt="Fire Island 2" class="small-image"></li>
+            <li><img src="FireIsland3.jpg" alt="Fire Island 3" class="small-image"></li>
+        </ul>
+    </section>
 
     <section class="call-to-action">
         <h2>Plan Your Trip to Fire Island</h2>
         <p>Ready to experience the magic of Fire Island? Start planning your trip today and create unforgettable memories on this beautiful island.</p>
         <a href="https://www.fireisland.com/" class="cta-button">Learn More</a>
     </section>
+    </main>
 </body>
 </html>
